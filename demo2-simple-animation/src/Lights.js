@@ -8,12 +8,12 @@ export default class Lights {
     }
 
     initAmbientLight() {
-        this.ambient = new THREE.AmbientLight(0xffffff, 0.5);
+        this.ambient = new THREE.AmbientLight(0xffffff, 1);
         this.scene.add(this.ambient);
     }
 
     initDirectionalLight() {
-        this.directional = new THREE.DirectionalLight(0x404040, 2); 
+        this.directional = new THREE.DirectionalLight(0x404040, 10); 
 
         this.directional.position.set(-3, 1, 3);
 
